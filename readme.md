@@ -9,4 +9,4 @@
 [RevisionPreviewNew.webm](https://user-images.githubusercontent.com/58802366/216951039-21a917e2-e9aa-4fab-8450-57600f0aa9ce.webm)
 
 
-**Note :- This has been also submitted as a feature in core <link> Once this gets merged into core, you will not need this plugin anymore.**
+**Note :- This has been also submitted as a feature in core [ticket](https://core.trac.wordpress.org/ticket/57641) Once this gets merged into core, you will not need this plugin anymore.**

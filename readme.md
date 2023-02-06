@@ -22,7 +22,7 @@
 
 ## Contributors :bust_in_silhouette:
 
-* **[Hit Bhalodia](https://github.com/hbhalodia)
+* **[Hit Bhalodia](https://github.com/hbhalodia)**
 
 ## License :page_with_curl:
 

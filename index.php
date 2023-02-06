@@ -1,0 +1,2 @@
+<?php
+// Scilence is golden.

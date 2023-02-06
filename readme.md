@@ -14,7 +14,7 @@
 * Activate the plugin.
 * Go to any posts/pages revisions.
 * Click on `preview` button for the revision you have selected.
-* You would be redirected to that particular posts in revisions tab.
+* You would be redirected to frontend with particular revision to be viewed.
 
 ## Author
 

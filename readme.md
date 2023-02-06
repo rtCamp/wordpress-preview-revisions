@@ -5,6 +5,6 @@
 - User can check its revision as they are checking the posts.
 
 # Checkout Video
+[ImageBlockCaption.webm](https://user-images.githubusercontent.com/58802366/216929932-c6e17046-35c8-4129-b969-8a6e4f18ddeb.webm)
 
-<video src='/images/PreviewRevisions.webm' width='180' />
 

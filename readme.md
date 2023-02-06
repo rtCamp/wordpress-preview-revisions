@@ -6,4 +6,4 @@
 
 # Checkout Video
 
-[Running Video](/images/PreviewRevisions.webm)
+[PreviewRevisions.webm](https://user-images.githubusercontent.com/58802366/216928039-c171e1bd-8d71-422c-86d6-829233848dfd.webm)

@@ -4,8 +4,9 @@
 - This previews the results same as preview mode for pages/posts.
 - User can check its revision as they are checking the posts.
 
-# Checkout Video
+## Checkout Video
+
+[RevisionPreviewNew.webm](https://user-images.githubusercontent.com/58802366/216951039-21a917e2-e9aa-4fab-8450-57600f0aa9ce.webm)
 
 
-[Untitled_ Feb 6, 2023 2_19 PM.webm](https://user-images.githubusercontent.com/58802366/216932851-dac4f9f6-be5a-4549-a891-7a84632d62d2.webm)
-
+**Note :- This has been also submitted as a feature in core <link> Once this gets merged into core, you will not need this plugin anymore.**

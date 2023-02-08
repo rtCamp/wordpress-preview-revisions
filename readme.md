@@ -1,14 +1,14 @@
 ## WordPress Preview Revisions :zap:
 
-* The plugin is used to check the old/previous revisions in preview mode same as preview mode for new drafts.
-* Editor can go to revisions list and click `preview` button to check the preview for revisions.
-* **Note :- This has been also submitted as a feature in core [ticket](https://core.trac.wordpress.org/ticket/57641), Once this gets merged into core, you will not need this plugin anymore.**
+* The plugin is used to check the front-end preview of the older content revisions of a page/post, just as the preview mode is used in a current draft.
+* Upon going to the revisions list, a preview button will be available to preview exactly how a page or post appeared in the selected version.
+* *Note:* This has also been submitted as a feature in the core [ticket](https://core.trac.wordpress.org/ticket/57641). Once this gets merged into the core, you will no longer need the plugin.
 
 ## About :bulb:
 
-* WordPress User's sometime by mistakes can remove some content from the posts and need to revert that again. So WordPress have a feature called `revisions` to check the previous contents and user can restore that content again.
-* There is a current limitation to that revisions is `preview`. User can only see the content that is being added while checking the revision not the exact thing that render over the frontend.
-* To overcome the above limitation we have developed the `WordPress Preview Revisions` plugin, the enables the preview button when user is checking the revision and user can actually preview that revision just as preview post feature and can identify that how revision was looking like and can take decision to restore that revision.
+* To enable editors to check and restore the previous content, whenever needed, WordPress has a handy `revisions` feature.
+* However, the current limitation of the revisions feature is the lack of a `preview` option. While checking a previous revision, the editors can only see the content changes in the draft, but not the visual appearance of how it renders over the front end.
+* To address the same, we have developed the `WordPress Preview Revisions` plugin, which enables the preview option for every revision, empowering the editors to take an informed call on what to restore.
 
 ## Demo :movie_camera:
 
@@ -16,11 +16,11 @@
 
 ## Installation Guide :guide_dog:
 
-* Clone this repo under `wp-content/plugins/` folder of WordPress.
+* Clone this repo under the `wp-content/plugins/` folder of WordPress.
 * Activate the plugin.
-* Go to any posts/pages revisions.
-* Click on `preview` button for the revision you have selected.
-* You would be redirected to frontend with particular revision to be viewed.
+* Go to the previous revisions of a page/post.
+* Click on the `preview` button for the revision you have selected.
+* You will be redirected to the front-end preview of that particular revision.
 
 ## Author
 
@@ -32,8 +32,7 @@
 
 ## License :page_with_curl:
 
-This project is licensed under the GPL2 License - see the [LICENSE.md](LICENSE.md) file for details
-
+This project is licensed under the GPL2 License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Does this interest you?
 

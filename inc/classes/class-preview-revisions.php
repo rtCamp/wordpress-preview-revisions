@@ -65,7 +65,7 @@ class Preview_Revisions {
 
 				let button = document.createElement( 'a' );
 				button.setAttribute( 'class', 'button restore-revision' );
-				button.innerText = <?php echo wp_json_encode( __( 'Preview', 'preview-revisions' ); ?>;
+				button.innerText = <?php echo wp_json_encode( __( 'Preview', 'preview-revisions' ) ); ?>;
 				let appendDoc = document.querySelectorAll( '.revisions-meta .diff-meta-to' );
 
 

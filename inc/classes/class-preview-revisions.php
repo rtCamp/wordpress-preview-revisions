@@ -65,7 +65,7 @@ class Preview_Revisions {
 
 				let button = document.createElement( 'a' );
 				button.setAttribute( 'class', 'button restore-revision' );
-				button.innerText = '<?php esc_html_e( 'Preview', 'preview-revisions' ); ?>';
+				button.innerText = <?php echo wp_json_encode( __( 'Preview', 'preview-revisions' ); ?>;
 				let appendDoc = document.querySelectorAll( '.revisions-meta .diff-meta-to' );
 
 
@@ -77,7 +77,7 @@ class Preview_Revisions {
 						revId = searchParams.get( 'revision' );
 					}
 
-					let preview_link = '<?php echo esc_url_raw( $preview_link ); ?>' + '&p=' + revId;
+					let preview_link = <?php echo wp_json_encode( esc_url_raw( $preview_link ) ); ?> + '&p=' + revId;
 					button.setAttribute( 'href', preview_link );
 					appendDoc[0].appendChild( button );
 				};

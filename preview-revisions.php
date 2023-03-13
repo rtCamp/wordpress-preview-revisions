@@ -23,5 +23,5 @@ define( 'PREVIEW_REVISIONS_FEATURES_URL', untrailingslashit( plugin_dir_url( __F
 if ( ! class_exists( 'Preview_Revisions' ) ) {
 	require_once PREVIEW_REVISIONS_FEATURES_PATH . '/inc/classes/class-preview-revisions.php';
 
-	$revisions = new Preview_Revisions();
+	new Preview_Revisions();
 }

@@ -92,7 +92,7 @@ class Preview_Revisions {
 	 * Function to modify the post request.
 	 *
 	 * @param string $posts_request
-	 * @return void
+	 * @return string
 	 */
 	public function modify_posts_request( $posts_request ) {
 

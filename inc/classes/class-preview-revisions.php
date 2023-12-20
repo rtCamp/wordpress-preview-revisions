@@ -24,7 +24,7 @@ class Preview_Revisions {
 	 *
 	 * @return void
 	 */
-	public function setup_hooks() {
+	public function setup_hooks(): void {
 
 		// Actions.
 		add_action( 'admin_head', array( $this, 'preview_revisions' ) );
@@ -41,7 +41,7 @@ class Preview_Revisions {
 	 *
 	 * @return void
 	 */
-	public function preview_revisions() {
+	public function preview_revisions(): void {
 
 		$current_screen = get_current_screen();
 

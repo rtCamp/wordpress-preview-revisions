@@ -101,7 +101,7 @@ class Preview_Revisions {
 	 *
 	 * @return string $posts_request Modified Posts Request.
 	 */
-	public function modify_posts_request( $posts_request ) {
+	public function modify_posts_request( string $posts_request ): string {
 
 		if ( is_admin() ) {
 			return $posts_request;
@@ -166,7 +166,7 @@ class Preview_Revisions {
 	 *
 	 * @return array $posts_results Modified Posts Results.
 	 */
-	public function inherit_parent_status( $posts_results ) {
+	public function inherit_parent_status( array $posts_results ): array {
 
 		global $wp_post_statuses;
 
@@ -182,7 +182,7 @@ class Preview_Revisions {
 	 *
 	 * @return array
 	 */
-	public function undo_inherit_parent_status( $posts ) {
+	public function undo_inherit_parent_status( array $posts ): array {
 
 		global $wp_post_statuses;
 

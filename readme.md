@@ -29,6 +29,7 @@
 ## Contributors :bust_in_silhouette:
 
 * **[Hit Bhalodia](https://github.com/hbhalodia)**
+* **[Shalin Shah](https://github.com/SH4LIN)**
 
 ## License :page_with_curl:
 

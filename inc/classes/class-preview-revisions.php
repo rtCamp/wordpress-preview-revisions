@@ -6,7 +6,7 @@
  */
 
 /**
- * class Preview_Revisions
+ * Preview_Revisions class.
  */
 class Preview_Revisions {
 
@@ -14,7 +14,9 @@ class Preview_Revisions {
 	 * Construct method.
 	 */
 	public function __construct() {
+
 		$this->setup_hooks();
+
 	}
 
 	/**
@@ -22,7 +24,7 @@ class Preview_Revisions {
 	 *
 	 * @return void
 	 */
-	public function setup_hooks() {
+	public function setup_hooks(): void {
 
 		// Actions.
 		add_action( 'admin_head', array( $this, 'preview_revisions' ) );
@@ -36,8 +38,11 @@ class Preview_Revisions {
 
 	/**
 	 * Function to add preview revisions button.
+	 *
+	 * @return void
 	 */
-	public function preview_revisions() {
+	public function preview_revisions(): void {
+
 		$current_screen = get_current_screen();
 
 		if ( ! $current_screen || 'revision' !== $current_screen->id ) {
@@ -86,21 +91,23 @@ class Preview_Revisions {
 			}, 300 );
 		</script>
 		<?php
+
 	}
 
 	/**
 	 * Function to modify the post request.
 	 *
-	 * @param string $posts_request
-	 * @return string
+	 * @param string $posts_request Posts Request.
+	 *
+	 * @return string $posts_request Modified Posts Request.
 	 */
-	public function modify_posts_request( $posts_request ) {
+	public function modify_posts_request( string $posts_request ): string {
 
 		if ( is_admin() ) {
 			return $posts_request;
 		}
 
-		if ( ! isset( $_REQUEST['_wpnonce'] ) || empty( $_REQUEST['_wpnonce' ] ) ) {
+		if ( ! isset( $_REQUEST['_wpnonce'] ) || empty( $_REQUEST['_wpnonce'] ) ) {
 			return $posts_request;
 		}
 
@@ -147,23 +154,25 @@ class Preview_Revisions {
 		}
 
 		$posts_request = str_replace( "post_type = 'post'", "post_type = 'revision'", $posts_request );
-		$posts_request = str_replace( "post_type = '{$pub_post->post_type}'", "post_type = 'revision'", $posts_request );
 
-		return $posts_request;
+		return str_replace( "post_type = '{$pub_post->post_type}'", "post_type = 'revision'", $posts_request );
+
 	}
 
 	/**
 	 * Add posts_results post status to work the functionality.
 	 *
-	 * @param array $posts_results
+	 * @param array $posts_results Posts Results.
 	 *
-	 * @return array
+	 * @return array $posts_results Modified Posts Results.
 	 */
-	public function inherit_parent_status( $posts_results ) {
+	public function inherit_parent_status( array $posts_results ): array {
+
 		global $wp_post_statuses;
 
 		$wp_post_statuses['inherit']->protected = true;
 		return $posts_results;
+
 	}
 
 	/**
@@ -173,10 +182,12 @@ class Preview_Revisions {
 	 *
 	 * @return array
 	 */
-	public function undo_inherit_parent_status( $posts ) {
+	public function undo_inherit_parent_status( array $posts ): array {
+
 		global $wp_post_statuses;
 
 		$wp_post_statuses['inherit']->protected = false;
 		return $posts;
+
 	}
 }
